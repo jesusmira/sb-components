@@ -9,6 +9,7 @@ const meta = {
     argTypes: {
         color: { control: 'select'},
         fontColor: { control: 'color' },
+        backgroundColor: { control: 'color' },
       },
 
 }satisfies Meta<typeof MyLabel>
@@ -54,5 +55,13 @@ type Story = StoryObj<typeof meta>
         label:'No label',
         size:'h1',
         fontColor:'#5517ac'
+    } 
+ };
+ export const CustomBackgroundColor: Story = { 
+    args: {
+        label:'No label',
+        size:'h1',
+        fontColor:'white',
+        backgroundColor:'black'
     } 
  };
